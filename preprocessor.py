@@ -21,7 +21,6 @@ binary_labels = np.array([1 if label == 'positive' else 0 for label in labels])
 train_texts, test_texts, train_labels, test_labels = train_test_split(
     texts, binary_labels, test_size=0.2, random_state=42)
 
-
 # tokenize the text
 tokenizer = Tokenizer(num_words=10000, oov_token="<OOV>")
 tokenizer.fit_on_texts(train_texts)
@@ -53,3 +52,6 @@ test_padded = pad_sequences(
 
 with open('preprocessed_data.pickle', 'wb') as f:
     pickle.dump((train_padded, test_padded, train_labels, test_labels), f)
+
+with open('tokenizer.pickle', 'wb') as f:
+    pickle.dump(tokenizer, f)
