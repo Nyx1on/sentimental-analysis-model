@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 
 # load the dataset
-data = pd.read_csv('IMDB Dataset.csv')
+data = pd.read_csv('model_data/IMDB Dataset.csv')
 
 print('Loading dataset')
 

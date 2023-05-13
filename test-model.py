@@ -1,4 +1,5 @@
 import pickle
+import json
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
@@ -22,3 +23,7 @@ if prediction < 0.5:
     print("The input review is negative.")
 else:
     print("The input review is positive.")
+
+tokenizer_json = tokenizer.to_json()
+with open('tokenizer.json', 'w') as f:
+    f.write(tokenizer_json)
