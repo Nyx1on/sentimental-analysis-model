@@ -1,5 +1,5 @@
 /__pycache__
-
-/IMDB Dataset.csv
+/model_data
+IMDB Dataset.csv
 
 /preprocessed_data.pickle
