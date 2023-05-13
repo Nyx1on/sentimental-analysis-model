@@ -3,3 +3,5 @@
 /__pycache__
 
 /IMDB Dataset.csv
+
+/preprocessed_data.pickle
