@@ -29,4 +29,4 @@ print('Test loss:', test_loss)
 print('Test accuracy:', test_acc)
 
 
-model.save('sentimental_anayalsis_model')
+model.save('sentimental_anayalsis_model.h5')
